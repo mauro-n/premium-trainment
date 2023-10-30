@@ -1,0 +1,16 @@
+.section2__img {
+    width: 100%;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+@media(min-width: 768px) {
+    .section2__img {
+        max-width: 50%;
+    }
+
+    .section2__texts {
+        width: 50%;
+        max-width: 400px;
+    }
+}

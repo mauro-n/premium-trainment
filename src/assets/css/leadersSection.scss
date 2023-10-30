@@ -1,0 +1,48 @@
+@import './theme.scss';
+
+$portraits-size: 80px;
+$portraits-tilt: -15px;
+
+.leaders__img {
+    width: 100%;
+    min-height: 330px;
+    object-fit: cover;
+}
+
+.leaders-portraits-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-left: -$portraits-tilt * 2;
+    margin-top: 35px;
+
+    :nth-child(2) {
+        transform: translateX($portraits-tilt);
+    }
+
+    :nth-child(3) {
+        transform: translateX(calc($portraits-tilt * 2));
+    }
+}
+
+.leaders-portrait {
+    width: $portraits-size;
+    height: $portraits-size;
+    border: 2px solid white;
+    border-radius: 400px;
+    object-fit: cover;
+
+}
+
+
+@media(min-width: 768px) {
+    .leaders-portraits-wrapper {
+        margin-top: 5vw;
+    }
+    .leaders-section__img {
+        max-width: 50%;
+    }
+
+    .leaders-section__texts {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,135 @@
+@import "bootstrap/scss/bootstrap";
+
+/* Global */
+$body-margin: 10vw;
+$body-margin-sm: 12vw;
+/* Navbar */
+$navbar-height: 13px;
+/* Colors */
+$primary-color: #FF5C5C;
+$dark-bg: #070707;
+$text-color: #f0f0f0;
+/* Footer */
+$footer_icon_size: 40px;
+
+body {
+    background-color: #0D0D0D;
+    color: $text-color;
+}
+
+p, a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    color: $text-color;
+    text-decoration: none;
+}
+
+.mb--1 {
+    margin-bottom: -.8rem;
+}
+
+.section {
+    padding: 0 $body-margin;
+}
+
+.dark-bg {
+    background-color: $dark-bg;
+}
+
+.heading1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 100%;
+    font-size: 8.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100vw;
+    max-width: 680px;
+}
+
+.heading2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 90%;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.heading3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 100%;
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+.heading4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 90%;
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+
+.heading5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    line-height: 100%;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.subtitle1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.text1 {
+    font-family: 'Barlow', cursive;
+    font-size: 1.7rem;
+    line-height: 110%;
+}
+
+.text2 {
+    font-family: 'Barlow', cursive;
+    font-size: 1.6rem;
+    line-height: 105%;
+}
+
+.text3 {
+    font-family: 'Barlow', cursive;
+    font-size: 1.8rem;
+    line-height: 105%;
+}
+
+@media (max-width: 768px) {
+    .heading1 {
+        font-size: 5.4rem;
+        max-width: 80%;
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .heading4 {
+        font-size: 2.4rem;
+    }
+
+    .heading5 {
+        text-align: center;
+    }
+
+    .subtitle1 {
+        text-align: center;
+        font-size: 1.9rem;
+        max-width: 500px;
+        line-height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section {
+        padding: 0 $body-margin-sm;
+    }
+
+    .text2 {
+        text-align: center;
+    }
+}

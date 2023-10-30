@@ -1,0 +1,47 @@
+@import './theme.scss';
+
+.experts-wrapper {
+    overflow-x: hidden;
+}
+
+.expert_card {
+    width: 100%;
+    /* max-width: 400px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-content {
+    padding-bottom: 60px;
+}
+
+.swiper-pagination-bullet {
+    background-color: $primary-color;
+}
+
+
+/* *********************************** */
+/* ********** PAGINATION BULLET ********** */
+/* *********************************** */
+
+$bullet-size: 11.5px;
+$bullet-color: white;
+
+.pagination_bullet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bullet {
+    display: inline-block;
+    height: $bullet-size;
+    width: $bullet-size;
+    border-radius: 100px;
+    background-color: $bullet-color;
+}
+
+.bullet__active {
+    background-color: $primary-color;
+}

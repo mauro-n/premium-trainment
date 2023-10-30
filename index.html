@@ -4,14 +4,224 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="./src/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + TS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Swipper CSS -->
+  <link rel="stylesheet" href="./src/assets/css/swiper-bundle.min.css">
 </head>
 
 <body>
-  <nav>
-    <img src="./src/assets/images/logo.svg" alt="">
+  <nav class="cs__navbar">
+    <a href="/">
+      <img src="./src/assets/images/logo.svg" alt="" class="navbar--logo">
+    </a>
+    <a class="link" href="">Contact us</a>
   </nav>
+  <!-- -------------------------- -->
+  <!-- HERO SECTION -->
+  <!-- -------------------------- -->
+  <div class="hero__wrapper mb-5">
+    <!-- <img src="./src/assets/images/heroImg2.png" class="hero__img" draggable="false"> -->
+    <div class="hero__text-wrapper">
+      <div class="hero__text">
+        <h1 class="heading1 mb-5">
+          powerfull insights into your team
+        </h1>
+        <p class="subtitle1 mb-5">
+          Project planning and time tracking for agile teams          
+        </p>
+        <div class="d-none mt-5 mb-5 d-md-block">&nbsp;</div>
+        <div class="d-flex flex-column flex-md-row gap-4 mt-0 mt-md-5">
+          <button id="primary-btn" class="primary-btn heading5">
+            Schedule a demo
+            <!-- <img class="arrow-r-icon" src="./src/assets/images/arrow-right.svg"> -->
+          </button>
+          <button class="secondary-btn mt-3 mt-md-0 heading5">
+            All services
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hero__bg-spacing d-none d-md-block"></div>
+    <div class="hero_bg-wrapper">
+      <div class="hero__bg"></div>
+      <div class="hero_bg-gradient"></div>
+    </div>
+  </div>
+  <!-- -------------------------- -->
+  <!-- CARDS SECTION -->
+  <!-- -------------------------- -->
+  <section class="section py-3 pt-5 mt-2">
+    <div class="cards__wrapper gap-4 d-flex flex-column align-items-center flex-md-row">
+      <div class="cs__card">
+        <img src="./src/assets/images/christiann-koepke-dQyS2pMYtok-unsplash.jpg" class="card__img">
+        <div class="card__body">
+          <h2 class="card__title heading2 me-3 mt-2">
+            +500
+          </h2>
+          <p class="card__caption text1 text-center">
+            Sastified<br>Customers
+          </p>
+        </div>
+      </div>
+      <div class="cs__card card__reversed">
+        <img src="./src/assets/images/brooke-cagle-JBwcenOuRCg-unsplash.jpg" class="card__img">
+        <div class="card__body">
+          <h2 class="card__title heading2 me-1 mt-2 mb--1">
+            <span>4.9</span><span class="card__rating m-0 p-0">/5</span>
+          </h2>
+          <p class="card__caption text1 text-center">
+            Customer<br>Rating
+          </p>
+        </div>
+      </div>
+      <div class="cs__card mb-sm-5 mb-md-0">
+        <img src="./src/assets/images/campaign-creators-gMsnXqILjp4-unsplash (1).jpg" class="card__img">
+        <div class="card__body">
+          <h2 class="card__title heading2 me-3 mt-2">
+            +25k
+          </h2>
+          <p class="card__caption text1 text-center">
+            Professionals<br>Enrolled
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------- -->
+  <!-- SOLUTION SECTION -->
+  <!-- -------------------------- -->
+  <section class="section py-5 mt-5 dark-bg">
+    <h2 class="heading3 text-center">
+      The solution for team insights and training
+    </h2>
+    <div class="section2-content d-md-flex align-items-center justify-content-between gap-3">
+      <img class="section2__img mt-5 mb-5" src="./src/assets/images/annie-spratt-QckxruozjRg-unsplash.jpg" alt="">
+      <div class="section2__texts">
+        <p class="mt-2 mb-5 text2">
+          Bring the best on your employees, we offer high qualified insights for teams
+        </p>
+        <p class="mb-5 text2">
+          Over 10 years of experience with people, transforming workplaces into better places
+        </p>
+        <p class="mb-5 text2">
+          Our trainings are all certified by the AMSV, and hold a high quality standart
+        </p>
+        <button class="primary-btn w-100 heading5 mb-5 mt-2">
+          Start training now
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------- -->
+  <!-- EXPERTS SECTION -->
+  <!-- -------------------------- -->
+  <section class="section mt-5">
+    <h2 class="heading3 text-center">
+      Meet some of our experts
+    </h2>
+    <div class="swiper">
+      <div class="swiper-wrapper slide-content">
+        <div class="expert_card mt-5 swiper-slide">
+          <img class="card__img" src="./src/assets/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg" alt="">
+          <div class="card__body justify-content-start p-4 align-items-start h-auto">
+            <h3 class="card__title">
+              <span class="heading3">
+                Rania Hammound
+              </span>
+            </h3>
+            <p class="text2 pt-1">
+              Especialista arábe em lances de petróleo na bolsa de valores com mais de 40 anos de experiência em apostas
+              esportivas
+            </p>
+          </div>
+        </div>
+        <div class="expert_card mt-5 swiper-slide">
+          <img class="card__img" src="./src/assets/images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="">
+          <div class="card__body justify-content-start p-4 align-items-start h-auto">
+            <h3 class="card__title">
+              <span class="heading3">
+                Rania Hammound
+              </span>
+            </h3>
+            <p class="text2 pt-1">
+              Especialista arábe em lances de petróleo na bolsa de valores com mais de 40 anos de experiência em apostas
+              esportivas
+            </p>
+          </div>
+        </div>
+        <div class="expert_card mt-5 swiper-slide">
+          <img class="card__img" src="./src/assets/images/ludovic-migneault-4uj3iZ5m084-unsplash.jpg" alt="">
+          <div class="card__body justify-content-start p-4 align-items-start h-auto">
+            <h3 class="card__title">
+              <span class="heading3">
+                Rania Hammound
+              </span>
+            </h3>
+            <p class="text2 pt-1">
+              Especialista arábe em lances de petróleo na bolsa de valores com mais de 40 anos de experiência em apostas
+              esportivas
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- -------------------------- -->
+  <!-- LEADERS SECTION -->
+  <!-- -------------------------- -->
+  <section class="section dark-bg pb-5 pt-md-5">
+    <div class="d-md-flex justify-content-between align-items-start py-5 gap-3">
+      <div class="leaders-section__texts pt-1">
+        <h2 class="heading3 text-center my-5">
+          HERE WE BUILD LEADERS
+        </h2>
+        <p class="text1 text-center text-md-center mt-5">
+          Nós fornecemos treinamentos para aperfeiçoar os seus líderes e torná-los em comunicadores excepcionais.
+          Acreditamos nas pessoas como base para o sucesso.
+        </p>
+        <div class="leaders-portraits-wrapper">
+          <img src="./src/assets/images/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg" alt="" class="leaders-portrait">
+          <img src="./src/assets/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" alt="" class="leaders-portrait">
+          <img src="./src/assets/images/vince-fleming-j3lf-Jn6deo-unsplash (1).jpg" alt="" class="leaders-portrait">
+        </div>
+        <p class="text1 text-center mt-3">
+          + 100 Líderes Formados
+        </p>
+      </div>
+      <div class="leaders-section__img">
+        <img class="leaders__img my-5 my-md-0" src="./src/assets/images/krakenimages-376KN_ISplE-unsplash.jpg" alt="">
+      </div>
+    </div>
+    <button class="primary-btn heading4 mb-5 mt-md-5 mx-auto">
+      Get Started
+    </button>
+  </section>
+  <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between py-5">
+    <div class="footer__branding d-flex align-items-center gap-3">
+      <img src="./src/assets/images/logo.svg" alt="Logo image" class="footer__icon">
+      <p class="text3 mt-3">Premium<br>Trainment</p>
+    </div>
+    <div class="footer__socials d-flex my-5 gap-4 order-md-3">
+      <img src="./src/assets/images/social-icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+      <img src="./src/assets/images/social-icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+      <img src="./src/assets/images/social-icons/linkedin.svg" alt="Linkedin" class="footer__social-icon">
+      <img src="./src/assets/images/social-icons/twitter.svg" alt="Twitter" class="footer__social-icon">
+    </div>
+    <div class="footer__links d-flex gap-5 mb-5 mb-md-0">
+      <a class="text1" href="">About us</a>
+      <a class="text1" href="">Contact</a>
+    </div>
+  </footer>
+  <script src="./src/assets/js/swiper-bundle.min.js"></script>
+  <script src="./src/assets/js/main.js"></script>
+  <script src="./src/main.ts" type="module"></script>
 </body>
 
 </html>

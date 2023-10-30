@@ -1,0 +1,39 @@
+@import './theme.scss';
+
+.cs__card {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__rating {
+    font-size: 2.4rem;
+    align-self: baseline;
+}
+
+.card__reversed {
+    flex-direction: column-reverse;
+}
+
+/* .card__title {} */
+
+.card__img {
+    width: 100%;
+    height: 264px;
+    object-fit: cover;
+}
+
+.cs__img--zoom {
+    object-position: 10% 50%;
+}
+
+.card__body {
+    background-color: $primary-color;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+@import './theme.scss';
+
+.navbar--logo {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.cs__navbar {
+    z-index: 10;
+    background-color: #030712ec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $navbar-height $body-margin;
+    .link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        background-color: $primary-color;
+        padding: 0 1rem;
+        /* border-radius: 6px; */
+        &:hover {
+            filter: brightness(.9);
+        }
+    }
+}
+
